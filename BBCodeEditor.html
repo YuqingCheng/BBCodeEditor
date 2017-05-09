@@ -7,14 +7,27 @@
     <script type="text/javascript" src="js/markitup/jquery.markitup.js"></script>
     <script type="text/javascript" src="js/markitup/sets/bbcode/set.js"></script>
     <link rel="stylesheet" type="text/css" href="js/markitup/skins/markitup/style.css" />
-	<link rel="stylesheet" type="text/css" href="js/markitup/sets/bbcode/style.css" />
+  	<link rel="stylesheet" type="text/css" href="js/markitup/sets/bbcode/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    <script type="text/javascript" >
-      $(document).ready(function() {
-         $("#bbcode").markItUp(myBbcodeSettings);
-      });
-    </script>
-    <textarea id="bbcode"></textarea>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>BBCode Editor</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <script type="text/javascript" >
+        $(document).ready(function() {
+           $("#bbcode").markItUp(myBbcodeSettings);
+        });
+      </script>
+    <textarea id="bbcode"></textarea> 
+    </div>
+  </div> 
+</div>
+    
 </body>	
 </html>
