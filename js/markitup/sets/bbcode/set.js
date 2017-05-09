@@ -7,6 +7,7 @@
 myBbcodeSettings = {
   nameSpace:          "bbcode", // Useful to prevent multi-instances CSS conflict
   previewParserPath:  "~/sets/bbcode/Parser/parser.php",
+  previewAutoRefresh: false,
   markupSet: [
       {name:'Bold', key:'B', openWith:'[b]', closeWith:'[/b]'}, 
       {name:'Italic', key:'I', openWith:'[i]', closeWith:'[/i]'}, 

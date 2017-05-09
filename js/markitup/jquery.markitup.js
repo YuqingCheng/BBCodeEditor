@@ -43,7 +43,7 @@
 					previewPosition:		'after',
 					previewTemplatePath:	'~/templates/preview.html',
 					previewParser:			false,
-					previewParserPath:		'~/sets/bbcode/Parser/markitup.bbcode-parser.php',
+					previewParserPath:		'',
 					previewParserVar:		'data',
 					resizeHandle:			true,
 					beforeInsert:			'',
