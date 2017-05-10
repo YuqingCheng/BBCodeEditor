@@ -44,7 +44,6 @@ function BBCode2Html($text) {
 			$code = str_replace("[", "&#91;", $code);
 			$code = str_replace("]", "&#93;", $code);
 			return '<pre><code>'.$code.'</code></pre>';
-			//return 'sdjaoi';
 		}	
 	}
 	$text = preg_replace_callback('/\[code\](.*?)\[\/code\]/ms', "escape", $text);
@@ -95,6 +94,7 @@ function BBCode2Html($text) {
 					 '<ul>\1</ul>',
 					 '<li>\1</li>'
 	);
+	$text = preg_replace($in, $out, $text);
 	$text = preg_replace($in, $out, $text);
 		
 	// paragraphs
