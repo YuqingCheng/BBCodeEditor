@@ -31,7 +31,7 @@
 
 //define ("EMOTICONS_DIR", "/images/emoticons/");
 
-require_once "/Users/yuqingcheng/GitHub/BBCodeEditor/js/markitup/sets/bbcode/Parser/jBBCode/JBBCode/Parser.php";
+require_once __DIR__."/Parser.php";
 
 function BBCode2Html($text) {
 	
