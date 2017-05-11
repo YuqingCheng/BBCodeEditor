@@ -29,10 +29,19 @@
 // Thanks to Arialdo Martini, Mustafa Dindar for feedbacks.
 // ----------------------------------------------------------------------------
 
-define ("EMOTICONS_DIR", "/images/emoticons/");
+define ("EMOTICONS_DIR", "/js/markitup/sets/bbcode/images/");
+
+require_once __DIR__."/Parser.php";
 
 function BBCode2Html($text) {
+	
 	$text = trim($text);
+
+	$parser = new JBBCode\Parser();
+	$parser->addCodeDefinitionSet(new JBBCode\DefaultCodeDefinitionSet());
+	$parser->parse($text);
+
+	$text = $parser->getAsHtml();
 
 	// BBCode [code]
 	if (!function_exists('escape')) {
@@ -44,7 +53,6 @@ function BBCode2Html($text) {
 			$code = str_replace("[", "&#91;", $code);
 			$code = str_replace("]", "&#93;", $code);
 			return '<pre><code>'.$code.'</code></pre>';
-			//return 'sdjaoi';
 		}	
 	}
 	$text = preg_replace_callback('/\[code\](.*?)\[\/code\]/ms', "escape", $text);
@@ -114,7 +122,7 @@ function BBCode2Html($text) {
 	
 	$text = preg_replace_callback('/<ul>(.*?)<\/ul>/ms', "removeBr", $text);
 	$text = preg_replace('/<p><ul>(.*?)<\/ul><\/p>/ms', "<ul>\\1</ul>", $text);
-	
+
 	return $text;
 }
 

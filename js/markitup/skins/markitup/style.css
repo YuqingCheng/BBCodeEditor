@@ -109,8 +109,8 @@
 }
 .markItUpHeader ul a {
 	display:block;
-	width:16px; height:16px;
-	text-indent:-10000px;
+	width:22px; height:22px;
+	text-indent:-1000px;
 	background-repeat:no-repeat;
 	padding:3px;
 	margin:0px;
@@ -127,6 +127,8 @@
 	color:#FFF;
 	background-color:#3C769D;
 }
+
+
 /***************************************************************************************/
 .html .markItUpEditor {
 	background-image:url(images/bg-editor-html.png);
