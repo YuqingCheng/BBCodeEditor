@@ -29,6 +29,8 @@
 // Thanks to Arialdo Martini, Mustafa Dindar for feedbacks.
 // ----------------------------------------------------------------------------
 
+define ("EMOTICONS_DIR", "/js/markitup/sets/bbcode/images/");
+
 require_once __DIR__."/Parser.php";
 
 function BBCode2Html($text) {
@@ -125,7 +127,5 @@ function BBCode2Html($text) {
 }
 
 echo BBCode2Html( $_POST['data'] );
-
-
 
 ?>
