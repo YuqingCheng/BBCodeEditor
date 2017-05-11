@@ -6,7 +6,7 @@
 // ----------------------------------------------------------------------------
 myBbcodeSettings = {
   nameSpace:          "bbcode", // Useful to prevent multi-instances CSS conflict
-  previewParserPath:  "~/sets/bbcode/Parser/parser.php",
+  previewParserPath:  "~/sets/bbcode/Parser/jBBCode/JBBCode/parsing.php",
   previewAutoRefresh: false,
   markupSet: [
       {name:'Bold', key:'B', openWith:'[b]', closeWith:'[/b]'}, 
