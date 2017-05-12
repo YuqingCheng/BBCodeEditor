@@ -6,7 +6,7 @@ This package renders a simple page that enables bbcode edit and preview.
 * To test the page locally, please locate to the path of the package in the terminal, and execute '$ php -S localhost:8000' to make it a local server, then in the webbrowser "localhost:8000/index.html" should access to the page. 
 
 ### Sample Page
-![alt](https://drive.google.com/file/d/0B6clhltpztWXTTJ6cDFkQXNfMEE/view?usp=sharing)
+![alt](https://lh5.googleusercontent.com/xeWhKX31nIJelLkXYgJ-BH0ieH63uWFY1H7DGz31CUVeEYMLLGbSAcMgEIriLGH3XGVSfPTIP40tDA=w1115-h667)
 
 
 
